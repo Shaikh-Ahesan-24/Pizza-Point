@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/second"
+    tools:context=".MainActivity4">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:ignore="UseCompoundDrawables,UselessLeaf">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/chicken"
+                android:contentDescription="@string/john"
+                android:id="@+id/profile"/>
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_marginTop="8dp"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="@string/rate"
+                android:background="@drawable/design"
+                android:drawableStart="@drawable/baseline_star_24"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+               android:padding="10dp"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:drawablePadding="5dp"
+                tools:ignore="SmallSp,SpUsage,UseCompatTextViewDrawableXml" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_marginTop="8dp"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="@string/price"
+                android:background="@drawable/design"
+                android:drawableStart="@drawable/baseline_currency_rupee_24"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:drawablePadding="5dp"
+                tools:ignore="SmallSp,SpUsage,UseCompatTextViewDrawableXml" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/name"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginTop="5dp"
+                  android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/details"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+  <androidx.appcompat.widget.AppCompatButton
+      android:layout_width="130dp"
+      android:layout_height="50dp"
+      android:background="@drawable/button"
+    android:id="@+id/next"
+      android:text="@string/next"
+      android:textColor="@color/white"
+      android:textStyle="bold"
+      android:layout_gravity="end"
+      android:layout_marginEnd="20dp"
+
+      />
+</LinearLayout>
